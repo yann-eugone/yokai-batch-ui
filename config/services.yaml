@@ -25,3 +25,31 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    # todo remove these dummy jobs
+    job.foo:
+        class: Yokai\Batch\Job\Item\ItemJob
+        tags: [{name: 'yokai_batch.job', job: 'foo'}]
+        arguments:
+            $batchSize: 500
+            $reader: !service
+                class: Yokai\Batch\Job\Item\Reader\StaticIterableReader
+                arguments:
+                    $items: [1, 2, 3]
+            $processor: !service
+                class: Yokai\Batch\Job\Item\Processor\NullProcessor
+            $writer: !service
+                class: Yokai\Batch\Job\Item\Writer\NullWriter
+    job.bar:
+        class: Yokai\Batch\Job\Item\ItemJob
+        tags: [{name: 'yokai_batch.job', job: 'bar'}]
+        arguments:
+            $batchSize: 500
+            $reader: !service
+                class: Yokai\Batch\Job\Item\Reader\StaticIterableReader
+                arguments:
+                    $items: [1, 2, 3]
+            $processor: !service
+                class: Yokai\Batch\Job\Item\Processor\NullProcessor
+            $writer: !service
+                class: Yokai\Batch\Job\Item\Writer\NullWriter

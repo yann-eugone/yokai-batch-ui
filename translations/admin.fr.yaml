@@ -4,6 +4,9 @@ dashboard:
 
 job:
   name: Jobs
+  job_name:
+    foo: 'Foo job' #todo remove me
+    bar: 'Bar job' #todo remove me
   tab:
     general: Général
     failures: Erreurs
