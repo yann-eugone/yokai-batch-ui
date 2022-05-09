@@ -393,5 +393,14 @@
     },
     "twig/twig": {
         "version": "v3.3.10"
+    },
+    "yokai/batch": {
+        "version": "0.4.0"
+    },
+    "yokai/batch-symfony-console": {
+        "version": "0.4.0"
+    },
+    "yokai/batch-symfony-framework": {
+        "version": "0.4.0"
     }
 }

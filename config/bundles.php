@@ -13,4 +13,5 @@ return [
     Sonata\AdminBundle\SonataAdminBundle::class => ['all' => true],
     Doctrine\Bundle\DoctrineBundle\DoctrineBundle::class => ['all' => true],
     Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle::class => ['all' => true],
+    Yokai\Batch\Bridge\Symfony\Framework\YokaiBatchBundle::class => ['all' => true],
 ];

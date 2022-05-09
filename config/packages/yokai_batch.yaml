@@ -1,0 +1,4 @@
+# https://github.com/yokai-php/batch-src/blob/0.x/src/batch-symfony-framework/docs/getting-started.md
+yokai_batch:
+    storage:
+        filesystem: ~
