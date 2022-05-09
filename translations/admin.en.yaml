@@ -1,0 +1,40 @@
+dashboard:
+  system:
+    label: System
+
+job:
+  name: Jobs
+  tab:
+    general: General
+    failures: Errors
+    warnings: Warnings
+    children: Child jobs
+  fieldset:
+    information: Informations
+    parameters: Parameters
+    summary: Information
+  field:
+    execution_id: Execution ID
+    job_name: Job name
+    status: Status
+    start_time: Start time
+    end_time: End time
+    summary: Information
+    failures: Errors
+    warnings: Warnings
+    failure:
+      message: Message
+      class: Type
+      trace: Trace
+    warning:
+      message: Message
+      context: Context
+  status:
+    pending: Pending
+    running: Running
+    stopped: Stopped
+    completed: Completed
+    abandoned: Abandonned
+    failed: Failed
+  action:
+    download_logs: Download logs

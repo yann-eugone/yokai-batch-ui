@@ -1,0 +1,9 @@
+{%- apply spaceless %}
+    {%- if value is empty -%}
+        &nbsp;
+    {%- else -%}
+        <time datetime="{{ value|date('c', 'UTC') }}" title="{{ value|date('c', 'UTC') }}">
+            {{ value|date(format|default(null), timezone|default(null)) }}
+        </time>
+    {%- endif -%}
+{% endapply -%}

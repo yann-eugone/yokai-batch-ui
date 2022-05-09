@@ -1,0 +1,13 @@
+{% trans_default_domain 'admin' %}{# todo or change with your catalog #}
+
+{# @var execution \Yokai\Batch\JobExecution #}
+<div class="box box-primary">
+    <div class="box-header">
+        <h4 class="box-title">
+            {{ 'job.fieldset.summary'|trans }}
+        </h4>
+    </div>
+    <div class="box-body">
+        <pre class="highlight"><code class="json">{{ execution.summary.iterator|json_encode(constant('JSON_PRETTY_PRINT')) }}</code></pre>
+    </div>
+</div>

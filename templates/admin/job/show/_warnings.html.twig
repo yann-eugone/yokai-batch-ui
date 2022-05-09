@@ -1,0 +1,22 @@
+{% trans_default_domain 'admin' %}{# todo or change with your catalog #}
+
+{# @var execution \Yokai\Batch\JobExecution #}
+{# @var warning \Yokai\Batch\Warning #}
+<table class="table">
+    <thead>
+    <tr>
+        <th>{{ 'job.field.warning.message'|trans }}</th>
+        <th>{{ 'job.field.warning.context'|trans }}</th>
+    </tr>
+    <tbody>
+    {% for warning in warnings %}
+        <tr>
+            <td>{{ warning }}</td>
+            <td>
+                {% if warning.context %}
+                    <pre class="highlight"><code class="json">{{ warning.context|json_encode(constant('JSON_PRETTY_PRINT')) }}</code></pre>
+                {% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+</table>

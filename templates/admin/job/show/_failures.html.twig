@@ -1,0 +1,28 @@
+{% trans_default_domain 'admin' %}{# todo or change with your catalog #}
+
+{# @var execution \Yokai\Batch\JobExecution #}
+{# @var failure \Yokai\Batch\Failure #}
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>{{ 'job.field.failure.message'|trans }}</th>
+        <th>{{ 'job.field.failure.class'|trans }}</th>
+        {% if true %}{# todo role for accessing traces (or remove) #}
+            <th>{{ 'job.field.failure.trace'|trans }}</th>
+        {% endif %}
+    </tr>
+    <tbody>
+    {% for failure in failures %}
+        <tr>
+            <td>{{ failure }}</td>
+            <td>{{ failure.class }}</td>
+            {% if true %}{# todo role for accessing traces (or remove) #}
+                <td>
+                    {% if failure.trace %}
+                        <pre class="highlight"><code class="log">{{ failure.trace }}</code></pre>
+                    {% endif %}
+                </td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+</table>

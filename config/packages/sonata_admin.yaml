@@ -3,6 +3,15 @@ sonata_admin:
     dashboard:
         blocks:
             - { type: sonata.admin.block.admin_list, position: left }
+        groups:
+            system:
+                label: dashboard.system.label
+                label_catalogue: admin
+                icon: '<i class="fa fa-cog"></i>'
+                items:
+                    - route: admin_job_list
+                      label: job.name
+                      # roles: ['ROLE_***'] todo secure with role (or remove)
 
 sonata_block:
     blocks:

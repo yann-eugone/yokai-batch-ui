@@ -1,0 +1,4 @@
+{% trans_default_domain 'admin' %}{# todo or change with your catalog #}
+
+{# @var execution \Yokai\Batch\JobExecution #}
+{{ ('job.job_name.'~execution.jobName)|trans  }}
