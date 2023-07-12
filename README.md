@@ -2,7 +2,10 @@
 
 This project is a demo UI for [`yokai/batch` suite](https://github.com/yokai-php/batch-src).
 
-It is setup in a [`Symfony`](https://github.com/symfony/symfony) + [`SonataAdmin`](https://github.com/sonata-project/SonataAdminBundle).
+![image](https://github.com/yann-eugone/yokai-batch-ui/assets/1303838/af320128-15f3-4abf-a531-ffab98e3e57f)
+![image](https://github.com/yann-eugone/yokai-batch-ui/assets/1303838/1485c4b6-78b5-415d-b64a-6bcf0d0a2769)
+
+It is living in a [`Symfony`](https://github.com/symfony/symfony) + [`SonataAdmin`](https://github.com/sonata-project/SonataAdminBundle) project.
 
 Files you should read:
 
