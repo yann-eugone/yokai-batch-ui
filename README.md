@@ -1,8 +1,8 @@
 # Yokai Batch Sonata Admin UI
 
-> **Warning**
+> [!WARNING]  
 > Since https://github.com/yokai-php/batch-src/pull/104 the `yokai/batch` bundle has everything demoed in this repository.
-
+> You can still have a look to the code here, but you will find most of it in the bundle anyway.
 
 This project is a demo UI for [`yokai/batch` suite](https://github.com/yokai-php/batch-src).
 
